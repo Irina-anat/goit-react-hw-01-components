@@ -18,5 +18,5 @@ FriendList.propTypes = {
     PropTypes.shape({ id: PropTypes.number.isRequired })
   ),
 };
-   export default FriendList 
+export default FriendList;
 
