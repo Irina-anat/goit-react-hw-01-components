@@ -1,0 +1,33 @@
+.transaction__history{
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+   
+    margin-bottom: 50px;
+    table-layout: fixed;
+    border: solid 4px #b2b2a5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+th,
+td {
+    padding: 20px;
+    color: #FFFAF0;
+}
+
+th {
+    letter-spacing: 2px;
+    font-size: 26px;
+    line-height: 1.167;
+}
+
+td {
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 1.456;
+}
+
+tbody td {
+    text-align: center;
+}
+

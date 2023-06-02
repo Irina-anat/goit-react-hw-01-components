@@ -5,17 +5,15 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
-}
+};
 
 const Statistics = ({ title, stats }) => {
- // console.log(title)
- // console.log(stats)
-    return (
-     <section className={css.statistics}>
-     {title && <h2 className={css.title}>{title}</h2>}
+  return (
+    <section className={css.statistics}>
+      {title && <h2 className={css.title}>{title}</h2>}
             
-    <ul className={css.stat__list}>
-          {stats.map(({ id, label, percentage }) => {
+      <ul className={css.stat__list}>
+        {stats.map(({ id, label, percentage }) => {
           return (
             <li
               className={css.stats}
@@ -26,10 +24,10 @@ const Statistics = ({ title, stats }) => {
             </li>
           );
         })}
-      </ul>         
-</section>
-)
-}
+      </ul>
+    </section>
+  )
+};
 
 Statistics.propTypes = {
 title: PropTypes.string,

@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 
 const FriendList = ({ friends }) => {
-  // console.log(friends)
   return (
     <ul className={css.friend__list}>
       {friends.map(friend => (
