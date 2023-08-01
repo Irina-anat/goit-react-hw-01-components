@@ -27,33 +27,6 @@ avatar — посилання на зображення
 stats — об'єкт з інформацією про активності
 Компонент повинен створювати DOM елемент наступної структури.
 
-<div class="profile">
-  <div class="description">
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-      alt="User avatar"
-      class="avatar"
-    />
-    <p class="name">Petra Marica</p>
-    <p class="tag">@pmarica</p>
-    <p class="location">Salvador, Brasil</p>
-  </div>
-
-  <ul class="stats">
-    <li>
-      <span class="label">Followers</span>
-      <span class="quantity">1000</span>
-    </li>
-    <li>
-      <span class="label">Views</span>
-      <span class="quantity">2000</span>
-    </li>
-    <li>
-      <span class="label">Likes</span>
-      <span class="quantity">3000</span>
-    </li>
-  </ul>
-</div>
 
 Приклад використання
 import user from 'path/to/user.json;
@@ -73,7 +46,7 @@ component preview
 Опис компонента <Statistics>
 Компонент повинен приймати два пропи title і stats, в яких вказується заголовок та об'єкт статистики.
 
-title – не обов'язковий, і якщо він не переданий, не повинна рендеритись розмітка заголовка <h2>.
+title – не обов'язковий, і якщо він не переданий, не повинна рендеритись розмітка заголовка .
 stats – масив об'єктів, що містять інформацію про елемент статистики. Може мати довільну кількість елементів.
 Колір фону елемента статистики в оформленні можна пропустити або створити функцію для генерації випадкового кольору.
 Компонент повинен створювати DOM елемент наступної структури.
@@ -180,4 +153,4 @@ currency - тип валюти
 Приклад використання
 import transactions from 'path/to/transactions.json';
 
-<TransactionHistory items={transactions} />;
+
