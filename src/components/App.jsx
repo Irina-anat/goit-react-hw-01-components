@@ -6,22 +6,25 @@ import user from 'data/user';
 import data from 'data/data';
 import friends from 'data/friends';
 import transactions from 'data/transactions';
+import { GlobalStyle } from './GlobalStyle';
 
 
 export const App = () => {
+  const { username, tag, location, avatar, stats } = user;
   return (
-   <div>
+   <>
      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
+        username={username}
+        tag={tag}
+        location={location}
+        avatar={avatar}
+        stats={stats}
       />
       <Statistics title="Upload stats" stats={data} />
       <div><FriendList friends={friends} /></div>
       <div><TransactionHistory items={transactions} /></div>  
-    </div>  
+      <GlobalStyle/>
+    </>  
   );
 };
     
