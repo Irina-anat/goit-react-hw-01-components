@@ -6,12 +6,12 @@ import { App } from 'components/App';
 
 const theme = {
   colors: {
-    backgroundColorCard: "#d7feff",
+    bgColorCard: "#d7feff",
     borderColor: "#b2b2a5",
-    backgroundColorAvatar: "#ffffff",
-    tagLocationColor: "#7c7c8f",
-    backgroundColorStats: "#7c7c8f",
-    labelColor: "#7c7c8f"
+    bgColorAvatar: "#ffffff",
+    greyColor: "#7c7c8f",
+    bgColorStats: "#ffffa4",
+    colorStatsText: "#FFFAF0"
   }
 };
 

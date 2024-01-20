@@ -1,32 +1,31 @@
 import PropTypes from 'prop-types'; 
-import css from './Profile.module.css';
-import { ProfileCard, Description, AvatarImg, UserName, UserTag, UserLocation } from './Profile.styled';
+import { ProfileCard, Description, AvatarImg, UserName, UserTag, UserLocation, Stats, StatsCards, LabelStats, QuantityStats } from './Profile.styled';
 
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <ProfileCard>
       <Description>
-        <AvatarImg src={avatar} alt={username} width="300" className={css.avatar} />
+        <AvatarImg src={avatar} alt={username} width="300"/>
         <UserName >{username}</UserName>
         <UserTag >@{tag}</UserTag>
         <UserLocation>{location}</UserLocation>
       </Description>
 
-      <ul className={css.stats}>
-        <li>
-          <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{stats.followers}</span>
-        </li>
-        <li>
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{stats.views}</span>
-        </li>
-        <li>
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{stats.likes}</span>
-        </li>
-      </ul>
+      <Stats>
+        <StatsCards>
+          <LabelStats>Followers</LabelStats>
+          <QuantityStats>{stats.followers}</QuantityStats>
+        </StatsCards>
+        <StatsCards>
+          <LabelStats>Views</LabelStats>
+          <QuantityStats>{stats.views}</QuantityStats>
+        </StatsCards>
+        <StatsCards>
+          <LabelStats>Likes</LabelStats>
+          <QuantityStats>{stats.likes}</QuantityStats>
+        </StatsCards>
+      </Stats>
     </ProfileCard>
   );
 };
